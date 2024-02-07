@@ -5,6 +5,7 @@ public class TodoDto {
     private String content;
     private String deadline;
 
+
     private boolean state;
 
     public TodoDto() {
