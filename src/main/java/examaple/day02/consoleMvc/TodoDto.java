@@ -9,6 +9,7 @@ public class TodoDto {
     private boolean state;
 
     public TodoDto() {
+        System.out.println("안녕");
     }
 
     public int getId() {
