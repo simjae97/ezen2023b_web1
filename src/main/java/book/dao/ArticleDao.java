@@ -2,6 +2,7 @@ package book.dao;
 
 import book.dto.ArticleForm;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -109,41 +110,37 @@ public class ArticleDao {
         }catch ( Exception e ){  System.out.println(e);      }
         return null; // 오류 이면 null
     }
-    // 5. 수정처리 매개변수 : 수정할 pk 수정할 값들 , 리턴: DTO
-    public ArticleForm update(ArticleForm form){
-        try {
-            String sql = "update article set title = ? ,content = ? where id = ?";
+
+    // 5. 수정처리 , 매개변수 : 수정할pk,수정할값들  , 리턴 : dto
+    public ArticleForm update( ArticleForm form ){
+        try{
+            String sql = "update article " +
+                    " set title = ? , content = ?" +
+                    " where id = ? ";
             ps = conn.prepareStatement(sql);
-            ps.setLong(3,form.getId());
-            ps.setString(2,form.getContent());
-            ps.setString(1,form.getTitle());
+            ps.setLong( 3 , form.getId() );
+            ps.setString( 1 , form.getTitle() );
+            ps.setString( 2 , form.getContent() );
             int count = ps.executeUpdate();
-            if(count == 1){
+            if( count == 1 ){
                 return form;
             }
-        }
-        catch (Exception e){
-            System.out.println("e = " + e);
-        }
+        }catch (Exception e ){  System.out.println(e);  }
         return null;
     }
 
-    public boolean delete(long id){
-        try {
-            String sql = "Delete from article where id =?";
-            ps= conn.prepareStatement(sql);
-            ps.setLong(1,id);
+    // 6. 삭제 처리 , 매개변수 : 삭제할id , 리턴 : T/F
+    public boolean delete( long id ){
+        try{
+            String sql ="delete from article where id = ? ";
+            ps = conn.prepareStatement(sql);
+            ps.setLong( 1 , id );
             int count = ps.executeUpdate();
-            if(count == 1){
-                return true;
-            }
-        }
-        catch (Exception e){
-            System.out.println("e = " + e);
-        }
-
+            if( count == 1 ) return true;
+        }catch (Exception e ){  System.out.println("e = " + e);}
         return false;
     }
+
 
 }
 
