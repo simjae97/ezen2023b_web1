@@ -1,0 +1,34 @@
+요청 html
+기능                      URL                 params 설명                                                                   method  contentType
+회원가입페이지요청      /registerview                                                                                            get      text/html
+회원가입요청          /registerview/register  {id:"아이디",pw:"비밀번호",name:"이름",email:"이메일",phone:"전화번호",img:"프로필사진"}post      applicaition/x-www-form-urlencode
+로그인페이지요청      /loginview                                                                                                get       text/html
+로그인요청          /loginview/login          {id:"아이디" , password:"패스워드"}                                               post      applicaition/x-www-form-urlencode
+개인정보페이지요청   /user/{no}                  uno:유저DTO의 PK                                                              get       text/html
+회원수정페이지요청   /user/{no}/edit             uno:유저DTO의 PK                                                              get       text/html
+회원수정요청        /user/edit                {uno:"수정할 USER의 PK",,name:"이름",email:"이메일",phone:"전화번호",img:"프로필사진"} post      applicaition/x-www-form-urlencode
+회원탈퇴요청        /user/{uno}/delete            uno:유저DTO의 PK                                                               post    applicaition/x-www-form-urlencode
+
+
+서버 http request
+기능                  mapping         params
+회원가입페이지요청       @GetMapping
+회원가입요청            @PostMapping  UserDTO userDTO
+로그인페이지요청         @GetMapping
+로그인요청              @PostMapping  UserDTO userDTO
+개인정보페이지요청       @GetMapping   @PathVariable int uno
+회원수정페이지요청       @GetMapping   @PathVariable int uno
+회원수정요청            @PostMapping  UserDTO userDTO
+회원탈퇴요청            @PostMapping  @PathVariable int uno
+
+
+서버 http response
+기능                  응답                                  contentType
+회원가입페이지요청      mustache                                 text/html
+회원가입요청          "redirect:/loginview"
+로그인페이지요청       mustache                                 text/html
+로그인요청            "redirect:/user/"+saved.getid();
+개인정보페이지요청     mustache                                  text/html
+회원수정페이지요청     mustache                                  text/html
+회원수정요청          "redirect:/user/"+saved.getid();
+회원탈퇴요청          "redirect:/loginview"

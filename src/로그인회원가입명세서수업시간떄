@@ -1,0 +1,5 @@
+회원가입처리요청    /member/signup      {id:"아이디",pw:"비밀번호",name:"이름",email:"이메일",phone:"전화번호",img:"프로필사진"} post  applicaition/x-www-form-urlencode      memberdto memberdto         @PostMapping           boolean           @ResponseBody:Application/json
+로그인처리 요청    /member/login         {id:"아이디",pw:"비밀번호"}                                                       post  applicaition/x-www-form-urlencode      logindto logindto          @PostMapping            boolean       @ResponseBody:Application/json
+회원가입페이지 요청  /member/signup                                                                                      get   text/html
+로그인처리요청     /member/login                                                                                        get   text/html
+(메소드명이 다르면 url이 같아도 사용가능, 메소드명이 (get,post...)같으면 사용 불가)

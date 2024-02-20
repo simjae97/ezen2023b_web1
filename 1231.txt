@@ -1,0 +1,2 @@
+1.applicaition/x-www-form-urlencode <html 기본형태>
+2. applicaition/json 중요

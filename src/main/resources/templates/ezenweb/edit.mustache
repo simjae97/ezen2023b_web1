@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {{no}}의 회원정보 수정페이지입니다.
+    <form action="/user/edit" method="post">
+        <input name = "{{no}}" type="hidden">
+        이름 <input name="name" /> <br/>
+        이메일 <input name="email" /> <br/>
+        phone <input name="phone" /> <br/>
+        img <input name="img" /> <br/>
+        <button type="submit">수정</button>
+    </form>
+    <button onclick="location.href='/user/{{no}}/del'">삭제</button>
+
+</body>
+</html>
