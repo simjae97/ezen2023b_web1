@@ -19,6 +19,7 @@ function write2(){
 }
 
 function allview(){
+    let a= 1;
     $.ajax({
             url: "/allview",
             method: "get",
@@ -26,9 +27,10 @@ function allview(){
             let html = ""
             let div =document.querySelector('div')
             for( i= 0 ; i < resultValue.length; i++){
-            html += `번호 : ${resultValue[i].no} , 할일: ${resultValue[i].content}, 상태 : ${resultValue[i].state} <button onclick="up(${resultValue[i].no})">상태변경</button><button onclick="del(${resultValue[i].no})">삭제
+            html += `번호 : ${a} , 할일: ${resultValue[i].content}, 상태 : ${resultValue[i].state} <button onclick="up(${resultValue[i].no})">상태변경</button><button onclick="del(${resultValue[i].no})">삭제
             <button onclick="upda(${resultValue[i].no})">할일수정</button>
             </button><br/>`;
+            a++;
             }
             div.innerHTML = html;
             }

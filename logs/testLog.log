@@ -671,3 +671,246 @@ examaple.day08._2인과제.controller.TodoController#del(int) mapped.
 2024-02-20T15:30:47.797+09:00  INFO 6736 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-02-20T15:30:47.798+09:00  INFO 6736 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-02-20T15:30:47.798+09:00  INFO 6736 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T16:36:22.158+09:00  INFO 1468 --- [main] examaple.day08._2인과제.Appstart            : Starting Appstart using Java 17.0.9 with PID 1468 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T16:36:22.159+09:00  INFO 1468 --- [main] examaple.day08._2인과제.Appstart            : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T16:36:22.936+09:00  INFO 1468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T16:36:22.945+09:00  INFO 1468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T16:36:22.945+09:00  INFO 1468 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T16:36:23.007+09:00  INFO 1468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T16:36:23.008+09:00  INFO 1468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 814 ms
+2024-02-20T16:36:23.535+09:00  INFO 1468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T16:36:23.542+09:00  INFO 1468 --- [main] examaple.day08._2인과제.Appstart            : Started Appstart in 1.664 seconds (process running for 1.878)
+2024-02-20T16:36:24.983+09:00  INFO 1468 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T16:36:24.984+09:00  INFO 1468 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T16:36:24.984+09:00  INFO 1468 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T16:36:33.839+09:00  INFO 14932 --- [main] examaple.day08._2인과제.Appstart            : Starting Appstart using Java 17.0.9 with PID 14932 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T16:36:33.841+09:00  INFO 14932 --- [main] examaple.day08._2인과제.Appstart            : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T16:36:34.554+09:00  INFO 14932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T16:36:34.562+09:00  INFO 14932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T16:36:34.563+09:00  INFO 14932 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T16:36:34.607+09:00  INFO 14932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T16:36:34.608+09:00  INFO 14932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 733 ms
+2024-02-20T16:36:35.049+09:00  INFO 14932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T16:36:35.055+09:00  INFO 14932 --- [main] examaple.day08._2인과제.Appstart            : Started Appstart in 1.522 seconds (process running for 1.775)
+2024-02-20T16:36:35.131+09:00  INFO 14932 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T16:36:35.131+09:00  INFO 14932 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T16:36:35.132+09:00  INFO 14932 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T16:39:31.428+09:00  INFO 10844 --- [main] examaple.day08._2인과제.Appstart            : Starting Appstart using Java 17.0.9 with PID 10844 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T16:39:31.430+09:00  INFO 10844 --- [main] examaple.day08._2인과제.Appstart            : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T16:39:32.134+09:00  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T16:39:32.143+09:00  INFO 10844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T16:39:32.143+09:00  INFO 10844 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T16:39:32.189+09:00  INFO 10844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T16:39:32.189+09:00  INFO 10844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2024-02-20T16:39:32.629+09:00  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T16:39:32.635+09:00  INFO 10844 --- [main] examaple.day08._2인과제.Appstart            : Started Appstart in 1.484 seconds (process running for 1.691)
+2024-02-20T17:02:10.781+09:00  INFO 10844 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:02:10.783+09:00  INFO 10844 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:02:10.784+09:00  INFO 10844 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:31:19.117+09:00  INFO 4964 --- [main] examaple.day08._2인과제.Appstart            : Starting Appstart using Java 17.0.9 with PID 4964 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:31:19.120+09:00  INFO 4964 --- [main] examaple.day08._2인과제.Appstart            : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:31:19.860+09:00  INFO 4964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:31:19.869+09:00  INFO 4964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:31:19.869+09:00  INFO 4964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:31:19.924+09:00  INFO 4964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:31:19.924+09:00  INFO 4964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2024-02-20T17:31:20.369+09:00  INFO 4964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:31:20.375+09:00  INFO 4964 --- [main] examaple.day08._2인과제.Appstart            : Started Appstart in 1.552 seconds (process running for 1.776)
+2024-02-20T17:32:42.664+09:00  INFO 4964 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:32:42.665+09:00  INFO 4964 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:32:42.665+09:00  INFO 4964 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T17:33:29.091+09:00  INFO 1924 --- [main] examaple.day08._2인과제.Appstart            : Starting Appstart using Java 17.0.9 with PID 1924 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:33:29.093+09:00  INFO 1924 --- [main] examaple.day08._2인과제.Appstart            : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:33:29.833+09:00  INFO 1924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:33:29.842+09:00  INFO 1924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:33:29.842+09:00  INFO 1924 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:33:29.889+09:00  INFO 1924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:33:29.890+09:00  INFO 1924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+2024-02-20T17:33:30.351+09:00  INFO 1924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:33:30.357+09:00  INFO 1924 --- [main] examaple.day08._2인과제.Appstart            : Started Appstart in 1.55 seconds (process running for 1.764)
+2024-02-20T17:33:30.797+09:00  INFO 1924 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:33:30.798+09:00  INFO 1924 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:33:30.798+09:00  INFO 1924 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T17:33:46.333+09:00  INFO 11848 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 11848 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:33:46.335+09:00  INFO 11848 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:33:47.046+09:00  INFO 11848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:33:47.054+09:00  INFO 11848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:33:47.055+09:00  INFO 11848 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:33:47.103+09:00  INFO 11848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:33:47.103+09:00  INFO 11848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 735 ms
+2024-02-20T17:33:47.545+09:00  WARN 11848 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-02-20T17:33:47.554+09:00  INFO 11848 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-20T17:33:47.569+09:00 ERROR 11848 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2024-02-20T17:33:58.569+09:00  INFO 11632 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 11632 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:33:58.571+09:00  INFO 11632 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:33:59.261+09:00  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:33:59.270+09:00  INFO 11632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:33:59.270+09:00  INFO 11632 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:33:59.317+09:00  INFO 11632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:33:59.317+09:00  INFO 11632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 714 ms
+2024-02-20T17:33:59.756+09:00  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:33:59.762+09:00  INFO 11632 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.469 seconds (process running for 1.677)
+2024-02-20T17:34:04.734+09:00  INFO 11632 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:34:04.734+09:00  INFO 11632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:34:04.735+09:00  INFO 11632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T17:35:11.725+09:00  INFO 11816 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 11816 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:35:11.727+09:00  INFO 11816 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:35:12.468+09:00  INFO 11816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:35:12.476+09:00  INFO 11816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:35:12.476+09:00  INFO 11816 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:35:12.525+09:00  INFO 11816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:35:12.525+09:00  INFO 11816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2024-02-20T17:35:12.971+09:00  INFO 11816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:35:12.978+09:00  INFO 11816 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.538 seconds (process running for 1.759)
+2024-02-20T17:35:14.198+09:00  INFO 11816 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:35:14.198+09:00  INFO 11816 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:35:14.200+09:00  INFO 11816 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-02-20T17:35:30.584+09:00  INFO 9112 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 9112 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:35:30.587+09:00  INFO 9112 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:35:31.348+09:00  INFO 9112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:35:31.357+09:00  INFO 9112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:35:31.357+09:00  INFO 9112 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:35:31.406+09:00  INFO 9112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:35:31.407+09:00  INFO 9112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 785 ms
+2024-02-20T17:35:31.873+09:00  INFO 9112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:35:31.880+09:00  INFO 9112 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.578 seconds (process running for 1.788)
+2024-02-20T17:36:21.248+09:00  INFO 9112 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:36:21.248+09:00  INFO 9112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:36:21.249+09:00  INFO 9112 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:36:21.263+09:00  WARN 9112 --- [http-nio-80-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-02-20T17:36:51.354+09:00  INFO 12884 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 12884 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:36:51.356+09:00  INFO 12884 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:36:52.056+09:00  INFO 12884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:36:52.066+09:00  INFO 12884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:36:52.066+09:00  INFO 12884 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:36:52.120+09:00  INFO 12884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:36:52.120+09:00  INFO 12884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-02-20T17:36:52.581+09:00  INFO 12884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:36:52.588+09:00  INFO 12884 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.509 seconds (process running for 1.718)
+2024-02-20T17:36:54.266+09:00  INFO 12884 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:36:54.266+09:00  INFO 12884 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:36:54.267+09:00  INFO 12884 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:36:54.284+09:00  WARN 12884 --- [http-nio-80-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-02-20T17:37:12.051+09:00  INFO 9368 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 9368 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:37:12.053+09:00  INFO 9368 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:37:12.742+09:00  INFO 9368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:37:12.751+09:00  INFO 9368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:37:12.751+09:00  INFO 9368 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:37:12.800+09:00  INFO 9368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:37:12.800+09:00  INFO 9368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2024-02-20T17:37:13.236+09:00  INFO 9368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:37:13.243+09:00  INFO 9368 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.47 seconds (process running for 1.678)
+2024-02-20T17:37:13.377+09:00  INFO 9368 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:37:13.377+09:00  INFO 9368 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:37:13.378+09:00  INFO 9368 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:38:13.870+09:00  INFO 11848 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 11848 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:38:13.872+09:00  INFO 11848 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:38:14.599+09:00  INFO 11848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:38:14.608+09:00  INFO 11848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:38:14.608+09:00  INFO 11848 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:38:14.655+09:00  INFO 11848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:38:14.655+09:00  INFO 11848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2024-02-20T17:38:15.105+09:00  INFO 11848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:38:15.112+09:00  INFO 11848 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.525 seconds (process running for 1.738)
+2024-02-20T17:38:23.948+09:00  INFO 11848 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:38:23.948+09:00  INFO 11848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:38:23.949+09:00  INFO 11848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:38:39.995+09:00  INFO 12632 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 12632 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:38:39.997+09:00  INFO 12632 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:38:40.674+09:00  INFO 12632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:38:40.683+09:00  INFO 12632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:38:40.683+09:00  INFO 12632 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:38:40.732+09:00  INFO 12632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:38:40.732+09:00  INFO 12632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2024-02-20T17:38:41.157+09:00  INFO 12632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:38:41.163+09:00  INFO 12632 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.446 seconds (process running for 1.656)
+2024-02-20T17:38:43.998+09:00  INFO 12632 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:38:43.998+09:00  INFO 12632 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:38:43.999+09:00  INFO 12632 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:39:02.591+09:00  INFO 15796 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 15796 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:39:02.593+09:00  INFO 15796 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:39:03.298+09:00  INFO 15796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:39:03.306+09:00  INFO 15796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:39:03.306+09:00  INFO 15796 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:39:03.351+09:00  INFO 15796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:39:03.351+09:00  INFO 15796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2024-02-20T17:39:03.802+09:00  INFO 15796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:39:03.809+09:00  INFO 15796 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.51 seconds (process running for 1.724)
+2024-02-20T17:39:09.458+09:00  INFO 15796 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:39:09.458+09:00  INFO 15796 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:39:09.459+09:00  INFO 15796 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:49:20.898+09:00  INFO 2460 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 2460 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:49:20.900+09:00  INFO 2460 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:49:21.595+09:00  INFO 2460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:49:21.604+09:00  INFO 2460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:49:21.604+09:00  INFO 2460 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:49:21.653+09:00  INFO 2460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:49:21.653+09:00  INFO 2460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms
+2024-02-20T17:49:22.099+09:00  INFO 2460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:49:22.105+09:00  INFO 2460 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.499 seconds (process running for 1.723)
+2024-02-20T17:49:26.675+09:00  INFO 2460 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:49:26.675+09:00  INFO 2460 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:49:26.676+09:00  INFO 2460 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T17:49:50.040+09:00  INFO 13292 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 13292 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:49:50.041+09:00  INFO 13292 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:49:50.762+09:00  INFO 13292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:49:50.773+09:00  INFO 13292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:49:50.773+09:00  INFO 13292 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:49:50.832+09:00  INFO 13292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:49:50.832+09:00  INFO 13292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2024-02-20T17:49:51.273+09:00  INFO 13292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:49:51.280+09:00  INFO 13292 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.53 seconds (process running for 1.752)
+2024-02-20T17:49:54.636+09:00  INFO 13292 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:49:54.636+09:00  INFO 13292 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:49:54.637+09:00  INFO 13292 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:50:30.034+09:00  INFO 14752 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 14752 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:50:30.036+09:00  INFO 14752 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:50:30.720+09:00  INFO 14752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:50:30.729+09:00  INFO 14752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:50:30.730+09:00  INFO 14752 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:50:30.774+09:00  INFO 14752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:50:30.775+09:00  INFO 14752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 707 ms
+2024-02-20T17:50:31.218+09:00  INFO 14752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:50:31.224+09:00  INFO 14752 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.477 seconds (process running for 1.686)
+2024-02-20T17:50:31.435+09:00  INFO 14752 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:50:31.435+09:00  INFO 14752 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:50:31.435+09:00  INFO 14752 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-20T17:51:14.914+09:00  INFO 9076 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 9076 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:51:14.916+09:00  INFO 9076 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:51:15.626+09:00  INFO 9076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:51:15.634+09:00  INFO 9076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:51:15.635+09:00  INFO 9076 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:51:15.683+09:00  INFO 9076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:51:15.684+09:00  INFO 9076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms
+2024-02-20T17:51:16.120+09:00  INFO 9076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:51:16.127+09:00  INFO 9076 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.508 seconds (process running for 1.715)
+2024-02-20T17:51:16.237+09:00  INFO 9076 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:51:16.237+09:00  INFO 9076 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:51:16.238+09:00  INFO 9076 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-20T17:56:54.966+09:00  INFO 5360 --- [main] examaple.day08._2인과제수업.Appstart          : Starting Appstart using Java 17.0.9 with PID 5360 (C:\Users\504\Desktop\ezen2023b_web1\build\classes\java\main started by 504 in C:\Users\504\Desktop\ezen2023b_web1)
+2024-02-20T17:56:54.967+09:00  INFO 5360 --- [main] examaple.day08._2인과제수업.Appstart          : No active profile set, falling back to 1 default profile: "default"
+2024-02-20T17:56:55.687+09:00  INFO 5360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-02-20T17:56:55.695+09:00  INFO 5360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-20T17:56:55.695+09:00  INFO 5360 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20T17:56:55.743+09:00  INFO 5360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-20T17:56:55.744+09:00  INFO 5360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
+2024-02-20T17:56:56.177+09:00  INFO 5360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-02-20T17:56:56.184+09:00  INFO 5360 --- [main] examaple.day08._2인과제수업.Appstart          : Started Appstart in 1.5 seconds (process running for 1.71)
+2024-02-20T17:56:56.269+09:00  INFO 5360 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20T17:56:56.269+09:00  INFO 5360 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-20T17:56:56.270+09:00  INFO 5360 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

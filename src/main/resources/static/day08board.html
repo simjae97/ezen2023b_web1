@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3> 방문록</h3>
+    내용:<input /> <br/>
+    작성자:<input /> <br/>
+    비밀번호:<input /> <br/>
+    <button onclick="doCreate()" > 작성 </button>
+
+    <table>
+        <thead>
+            <tr>
+                <th> 번호 </th><th> 내용 </th><th> 작성자 </th><th> 비고 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 번호 </td><td> 내용 </td><td> 작성자 </td>
+                <td>
+                    <button onclick="doDelete(2)">삭제</button>
+                    <button onclick="doUpdate(2)">수정</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="/js/day08Board.js"></script>
+</body>
+</html>
