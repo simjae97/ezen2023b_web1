@@ -23,21 +23,25 @@ public class BoardController {
         return result;
     }
     @GetMapping("/board/read")
+    @ResponseBody
     public List<BoardDTO> read(){
         List<BoardDTO> result = boardDAO.read();
         return result;
     }
-    @PostMapping("/board/delete/{bno}")
+    @PostMapping("/board/delete/{bno}/{bpassword}")
     @ResponseBody
-    public boolean delete(@PathVariable int bno){
+    public boolean delete(@PathVariable int bno ,@PathVariable String bpassword){
         System.out.println(bno);
-        boolean result = boardDAO.delete(bno);
+        //추가:패스워드 검증 요청
+        boolean result  = boardDAO.confirmPassword(bno,bpassword);
+        if(result){result = boardDAO.delete(bno);}
         return result;
     }
     @PostMapping("/board/update")
     @ResponseBody
     public boolean update(BoardDTO boardDTO){
-        boolean result = boardDAO.update(boardDTO);
+        boolean result  = boardDAO.confirmPassword(boardDTO.getBno(),boardDTO.getBpassword());
+        if(result){result = boardDAO.update(boardDTO);}
         return result;
     }
 

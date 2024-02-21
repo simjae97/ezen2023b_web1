@@ -26,7 +26,7 @@ function allview(){
             success : function result(resultValue){
             let html = ""
             let div =document.querySelector('div')
-            for( i= 0 ; i < resultValue.length; i++){
+            for(let i= 0 ; i < resultValue.length; i++){
             html += `번호 : ${a} , 할일: ${resultValue[i].content}, 상태 : ${resultValue[i].state} <button onclick="up(${resultValue[i].no})">상태변경</button><button onclick="del(${resultValue[i].no})">삭제
             <button onclick="upda(${resultValue[i].no})">할일수정</button>
             </button><br/>`;

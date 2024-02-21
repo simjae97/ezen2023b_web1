@@ -83,4 +83,21 @@ public class BoardDAO {
         }
         return false;
     }
+
+    public boolean confirmPassword(int bno, String bpassword){
+        try {
+            String sql = "select * from board where bno = ? and bpassword = ? ";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1,bno);
+            ps.setString(2,bpassword);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                return true;
+            }
+        }
+        catch (Exception e) {
+            System.out.println("e = " + e);
+        }
+        return false;
+    }
 }
