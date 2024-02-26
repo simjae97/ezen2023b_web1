@@ -49,9 +49,10 @@ function login(){
             url : '/member/login',
             method : 'POST',
             data :info,
-            success : function result( result){
+            success : (result) => {
             if(result){
                 alert("로그인 성공")
+                location.href = "/" // 로그인 성공시 메인페이지로
             }
             else{
                 alert("로그인실패")
