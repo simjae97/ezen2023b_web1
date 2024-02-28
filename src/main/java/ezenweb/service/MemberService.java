@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 public class MemberService {
     // 1.회원가입 서비스
     @Autowired
+    private EmailService emailService;
+    @Autowired
     FileService fileService;
     @Autowired
     MemberDAO memberDAO;
@@ -25,6 +27,9 @@ public class MemberService {
         memberDTO.setUuidFile(fileName);
             //2.DB 처리 // DTO에 업로드 성공한 파일명을 대입
         result = memberDAO.doPostsignup(memberDTO);
+//        if(result){
+//            emailService.send();
+//        }
         return result;
     }
 
@@ -34,5 +39,11 @@ public class MemberService {
     public MemberDTO doGetLoginInfo(String id){
         // 1. DAO 호출
         return memberDAO.doGetLoginInfo(id);
+    }
+    //아이디 체크
+    public boolean doGetFindIdCheck(String id){
+        System.out.println("MemberController.doGetFindIdCheck");
+        System.out.println("id = " + id);
+        return memberDAO.doGetFindIdCheck(id);
     }
 }

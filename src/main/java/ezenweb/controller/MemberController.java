@@ -99,7 +99,14 @@ public class MemberController {
         return memberService.doGetLoginInfo(id);
     }
 
-
+    //4------아이디 중복 체크 요청 --------------
+    @GetMapping("/member/find/idcheck")
+    @ResponseBody
+    public boolean doGetFindIdCheck(String id){
+        System.out.println("MemberController.doGetFindIdCheck");
+        System.out.println("id = " + id);
+        return memberService.doGetFindIdCheck(id);
+    }
 
 
 

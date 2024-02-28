@@ -1,0 +1,12 @@
+# 1. 이메일 인증 코드
+# 1. 관리자가 사용하는 이메일의 서버(naver)
+spring.mail.host = smtp.naver.com
+spring.mail.port = 587
+# 관리자가 사용하는 이메일 아이디
+spring.mail.username=tlawo33
+# 관리자가 사용하는 이메일 비밀번호(깃 커밋금지)
+spring.mail.password=
+#보안
+spring.mail.proprties.mail.smtp.auth=true
+#보안
+spring.mail.properties.mail.smtp.starttls =true

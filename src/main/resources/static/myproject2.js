@@ -15,31 +15,64 @@ function onChangeImg(img){
             canvas.width = imgElement.width;
             canvas.height = imgElement.height;
             ctx.drawImage(imgElement, 0, 0);
-            
-            // 이미지를 그레이스케일로 변환
-            let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            let data = imageData.data;
-            for (let i = 0; i < data.length; i += 4) {
-                let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
-                data[i] = avg; //r
-                data[i + 1] = avg; //g
-                data[i + 2] = avg; //b
-            }
-            ctx.putImageData(imageData, 0, 0);
-                    
-            // 이진화
-            let threshold = 128; // 임계값 설정
-            imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            data = imageData.data;
-            for (let i = 0; i < data.length; i += 4) {
-                let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
-                let binaryValue = avg > threshold ? 255 : 0;
-                data[i] = binaryValue;
-                data[i + 1] = binaryValue;
-                data[i + 2] = binaryValue;
-            }
-                    
-            ctx.putImageData(imageData, 0, 0);        
+              
         };
     }
 }
+
+function grayscale() {
+    
+    let img = document.querySelector("#preimg");
+    let canvas = document.querySelector("#canvas");
+    let ctx = canvas.getContext('2d');
+    
+    // 캔버스 크기를 이미지의 크기로 설정
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    // 캔버스에 이미지 그리기
+    ctx.drawImage(img, 0, 0, img.width, img.height);
+
+    // 이미지를 그레이스케일로 변환
+    let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let data = imageData.data;
+    for (let i = 0; i < data.length; i += 4) {
+        let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+        data[i] = avg;
+        data[i + 1] = avg;
+        data[i + 2] = avg;
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+
+}
+
+function binary(){
+    let img = document.querySelector("#preimg");
+    let canvas = document.querySelector("#canvas");
+    let ctx = canvas.getContext('2d');
+    
+    // 캔버스 크기를 이미지의 크기로 설정
+    canvas.width = img.width;
+    canvas.height = img.height;
+    
+    // 캔버스에 이미지 그리기
+    ctx.drawImage(img, 0, 0, img.width, img.height);
+    
+    let threshold = 128; // 임계값 설정
+    imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    data = imageData.data;
+    for (let i = 0; i < data.length; i += 4) {
+        let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+        let binaryValue = avg > threshold ? 255 : 0;
+        data[i] = binaryValue;
+        data[i + 1] = binaryValue;
+        data[i + 2] = binaryValue;
+    }
+    ctx.putImageData(imageData, 0, 0);
+    
+    ctx.putImageData(imageData, 0, 0);
+
+}
+
+

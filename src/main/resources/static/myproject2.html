@@ -5,16 +5,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="signUpForm">
         처리할 사진 :
         <input onchange="onChangeImg( this )" type="file" id="img" name="img" accept="image/*" /> <br/>
         
         미리보기 :
-    
+        <button type="button" onclick="grayscale()">그레이 스케일</button>
+        <button type="button" onclick="binary()"> 이진화 </button>
         <div>    <img id="preimg" src="/img/default.jpg" />   </div>
         <canvas id="canvas"></canvas>
         
-    </form>
     <script src="myproject2.js"> </script>
 </body>
 </html>
