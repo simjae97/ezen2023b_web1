@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="signUpForm">
+        처리할 사진 :
+        <input onchange="onChangeImg( this )" type="file" id="img" name="img" accept="image/*" /> <br/>
+        
+        미리보기 :
+    
+        <div>    <img id="preimg" src="/img/default.jpg" />   </div>
+        <canvas id="canvas"></canvas>
+        
+    </form>
+    <script src="myproject2.js"> </script>
+</body>
+</html>

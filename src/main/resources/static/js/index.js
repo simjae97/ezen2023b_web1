@@ -7,15 +7,23 @@ $.ajax({
         let login_menu = document.querySelector("#login_menu");
         let html = '';
         if(r){ // 로그인 했을때
-            html += `                    <li class="nav-item">
-                                             <a class="nav-link" onclick="logout()">로그아웃</a>
-                                         </li>
-                                         <li class="nav-item">
-                                             <a class="nav-link" href="/member/signup">마이페이지</a>
-                                         </li>
-                                         <li class="nav-item">
-                                             <img src="#"> ${r}님! 안녕하세요
-                                         </li>`
+            $.ajax({
+                url: "/member/login/info",
+                method : "get",
+                async : false,
+                data: {id:r},
+                success: (re) => {console.log(re)
+                            html += `                    <li class="nav-item">
+                                                             <a class="nav-link" onclick="logout()">로그아웃</a>
+                                                         </li>
+                                                         <li class="nav-item">
+                                                             <a class="nav-link" href="/member/signup">마이페이지</a>
+                                                         </li>
+                                                         <li class="nav-item">
+                                                             <img src="/img/${re.uuidFile}"> ${r}님! 안녕하세요
+                                                         </li>`
+                }
+            })
         }
         else{
             html += `                    <li class="nav-item">

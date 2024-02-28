@@ -22,7 +22,7 @@ public class MemberDAO extends DAO{
             ps.setString(3, memberDTO.getName());
             ps.setString(4, memberDTO.getEmail());
             ps.setString(5, memberDTO.getPhone());
-            ps.setString(6, memberDTO.getImg());
+            ps.setString(6, memberDTO.getUuidFile());
             int count = ps.executeUpdate();
             if(count == 1){
                 return true;
@@ -50,4 +50,34 @@ public class MemberDAO extends DAO{
         }
         return 0;
     }
+
+//    public MemberDTO findID(int id){
+//        try {
+//            String sql = "select no from member where id = ? and pw = ?"
+//        }
+//        catch (Exception e){
+//            System.out.println("e = " + e);
+//        }
+//        return null;
+//    }
+    public MemberDTO doGetLoginInfo(String id) {
+        MemberDTO memberDTO = new MemberDTO();
+        try {
+            String sql = "select * from member where id=?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,id);
+            rs = ps.executeQuery();
+            if(rs.next()) {
+                memberDTO=new MemberDTO(
+                        rs.getInt(1),rs.getString(2),null,rs.getString(4),rs.getString(5)
+                        ,rs.getString(6),null, rs.getNString(7)
+                );
+            }
+        }
+        catch (Exception e){
+            System.out.println("e = " + e);
+        }
+        return memberDTO;
+    }
+
 }

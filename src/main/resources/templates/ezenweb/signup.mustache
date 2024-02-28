@@ -8,17 +8,23 @@
 <!--        img <input name="img" /> <br/>-->
 <!--        <button type="submit">ㅇㅇㅇ</button>-->
 <!--    </form>-->
-        <div id ="signupview">
+    <form class = "signUpform">
+<!--        <div id ="signupview">-->
             <h3> 회원가입 페이지</h3>
-            아이디 <input type="text" id="id" /> <br/>
-            비밀번호 <input type="text" id="pw" /> <br/>
-            이름 <input type="text" id="name" /> <br/>
-            이메일 <input type="text" id="email" /> <br/>
-            phone <input type="text" id="phone" /> <br/>
-            img <input type="text" id="img" /> <br/>
-            <button onclick="signup()">회원가입</button>
+            아이디 <input type="text" id="id" name="id"/> <br/>
+            비밀번호 <input type="text" id="pw" name="pw"/> <br/>
+            이름 <input type="text" id="name" name="name"/> <br/>
+            이메일 <input type="text" id="email" name="email"/> <br/>
+            phone <input type="text" id="phone" name="phone"/> <br/>
+            프로필 사진: <input onchange="preimg(this)" type="file" id="img" name="img" accept="image/*"/> <br/>
+            <div><!--첨부파일 미리보기-->
+                <img id ="preimg2" src=""/>
+            </div>
+            <button type="button" onclick="signup()">회원가입</button>
             <a href="/member/login">로그인페이지 이동</a>
-        </div>
 
+<!--        </div>-->
+    </form>
     <script src="/js/member.js"></script>
+
 {{>ezenweb/footer}}

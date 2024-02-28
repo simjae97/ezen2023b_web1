@@ -3,6 +3,7 @@ package ezenweb.controller;
 import ezenweb.model.dao.MemberDAO;
 import ezenweb.model.dto.LoginDTO;
 import ezenweb.model.dto.MemberDTO;
+import ezenweb.service.MemberService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +14,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.File;
 import java.math.BigInteger;
 import java.util.Objects;
+import java.util.UUID;
 
 @Controller
 public class MemberController {
 
     @Autowired
     private HttpServletRequest request;
+    @Autowired
+    MemberService memberService;
+
     @Autowired
     MemberDAO memberDAO;
     //1단계: V<---->C 사이의 http 통신방식 설계
@@ -33,9 +39,7 @@ public class MemberController {
         /*
         {id:"아이디",pw:"비밀번호",name:"이름",email:"이메일",phone:"전화번호",img:"프로필사진"}
          */
-        System.out.println("MemberController.signup");
-        System.out.println("memberDTO = " + memberDTO);
-        boolean result = memberDAO.doPostsignup(memberDTO); // dao처리
+        boolean result = memberService.doPostSignup(memberDTO); // dao처리
         return result;
     }
 
@@ -67,9 +71,11 @@ public class MemberController {
         // 2.Http 세션 객체 호출 .getSession()
         // 3.Http 세션 데이터 호출 .getAtrribute("세션명") ------ 원래 쓰던 타입으로 다운캐스팅 필요
         Object a = request.getSession().getAttribute("loginDto");
-        String loginDto = null;
+        String  loginDto = null;
         if(a != null) {
             loginDto = (String) request.getSession().getAttribute("loginDto");
+//            loginDto = memberDAO.findID(name);다음에 no만 받아서 가져오기 해보기
+
         }
         //만약 로그인 했으면 ( 세션에 데이터가 있으면)
         return loginDto;
@@ -86,6 +92,20 @@ public class MemberController {
         return true;
         //로그아웃성공시 대부분 인덱스 로 돌아가야함 -> 인덱스 반환 혹은 responsebody해서 js에서 로케이션
     }
+    //3=====회원정보 요청 (로그인된 회원 요청)======================
+    @GetMapping("/member/login/info")
+    @ResponseBody
+    public MemberDTO doGetLoginInfo(String id){
+        return memberService.doGetLoginInfo(id);
+    }
+
+
+
+
+
+
+
+
     //3=======회원가입 페이지 요청=================
     @GetMapping("/member/signup")
     public String viewSignup(){
