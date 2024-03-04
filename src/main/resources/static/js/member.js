@@ -212,10 +212,88 @@ function emailcheck(){
     let email = document.querySelector("#email").value;
     let 이메일규칙 =/^[a-zA-z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]+$/
     let msg = "형식에 맞지않는 이메일입니다"
+    authreqbtn.disabled= true;
     if(이메일규칙.test(email)){
-        checkArray[4] = true;
-        msg = "통과"
+        authreqbtn.disabled = false;
+    }
+    else{
+        checkArray[4] =false;
     }
     document.querySelector(".emailcheckbox").innerHTML = msg;
 
+}
+let time = 0;
+let authbox = document.querySelector(".authbox");
+let authreqbtn = document.querySelector(".authreqbtn");
+let timeInter = null;
+
+//9.인증 요청
+function authreq(){
+    let html =`<span class="timebox"> </span>
+    <input type="text" class="ecodeinput" />
+    <button onclick="auth()" type="button"> 인증</button>`
+
+    authbox.innerHTML=html;
+    $.ajax({
+        url : "/auth/email/req",
+        method : "get",
+        data : {"email" : document.querySelector("#email").value},
+        success : (r) => {
+            if(r){
+            //4.타이머 함수 실행
+            time = 100;
+            ontimer();
+            authreqbtn.disabled= true// 해당 버튼 사용 금지
+            }
+            else{
+                alert("관리자에게 문의")
+            }
+        }
+    })
+}
+//==================================
+
+//==================================
+//10 타이머 함수
+function ontimer(){
+    timeInter = setInterval(()=>{
+        let m = parseInt(time/ 60);
+        let s = parseInt(time% 60);
+        m = m< 10? "0"+m : m;
+        s = s<10? "0"+s : s;
+    
+        document.querySelector(".timebox").innerHTML = `${m} : ${s}`
+        time--;
+        if(time < 0){
+            clearInterval(timeInter);
+            authreqbtn.disabled=false;
+            authbox.innerHTML = "";
+        }
+    }   
+    ,1000)
+}
+
+//11 인증함수
+function auth(){
+    //1.내가 입력한 인증번호
+    let ecodeinput = document.querySelector(".ecodeinput").value;
+    //2.내가 입력한 인증번호를 자바에게 보내기
+    $.ajax({
+        method: "get",
+        url: "/auth/email/check",
+        data: {"ecodeinput":ecodeinput},
+        success: (r) => {
+            if(r){
+                checkArray[4] = true;
+                document.querySelector(".emailcheckbox").innerHTML = "통과"
+                
+                clearInterval(timeInter); //버튼 종료
+                authreqbtn.disabled=false;
+                authbox.innerHTML = "";
+            }
+            else{
+                alert("잘못된 인증번호입니다")
+            }
+        }
+    });
 }

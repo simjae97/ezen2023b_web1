@@ -18,7 +18,7 @@ public class EmailService {
             //application properties
     @Autowired
     private JavaMailSender javaMailSender; // 다른함수에서도 사용하기위해 필드로
-    public void send(){
+    public void send(String toEmail , String subject , String content){
         MimeMessage message = javaMailSender.createMimeMessage();
         try {
             //1.메세지 구성
@@ -26,11 +26,11 @@ public class EmailService {
             //2.메세지 보내는사람
             mimeMessageHelper.setFrom("tlawo33@naver.com"); //관리자 이메일
             //3.메세지 받는 사람
-            mimeMessageHelper.setTo("tlawo2232@gmail.com"); //클라이언트 이메일(매개변수
+            mimeMessageHelper.setTo(toEmail); //클라이언트 이메일(매개변수
             //4.메일 제목
-            mimeMessageHelper.setSubject("자바에서 보내온 메시지"); //제목(매개변수)
+            mimeMessageHelper.setSubject(subject); //제목(매개변수)
             //5.메일 내용
-            mimeMessageHelper.setText("안녕하세요 내용입니다"); //내용(매개변수)
+            mimeMessageHelper.setText(content); //내용(매개변수)
             javaMailSender.send(message);
         }
         catch (Exception e){

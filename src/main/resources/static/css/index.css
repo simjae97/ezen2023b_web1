@@ -46,12 +46,4 @@
     font-family:'TTHakgyoansimMabeopsaR' ;
 }
 
-#loginview , .signUpform ,#footer{
-    width: 936px;
-    margin: 10px auto;
-    padding: 10px;
-}
 
-#loginview > input , .signUpform > input {
-    margin : 10 0px;
-}
