@@ -36,7 +36,7 @@ public class MemberDAO extends DAO{
     //2.로그인
     public int dologin(LoginDTO memberDTO){
         try {
-            String sql = "select no from member where id = ? and pw = ?";
+            String sql = "select mno from member where id = ? and pw = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1, memberDTO.getId());
             ps.setString(2, memberDTO.getPw());
