@@ -16,14 +16,45 @@ function onView(){
         method : "get",
         success : (r) => {
             console.log(r)
-            document.querySelector(".btitle").innerHTML = "제목 : "+r.btitle
-            document.querySelector(".bcontent").innerHTML = "내용 : "+r.bcontent
-            document.querySelector(".bcno").innerHTML = "카테고리 :"+r.bcno
-            document.querySelector(".mno").innerHTML = "작성자 : "+r.mno
-            document.querySelector(".bdate").innerHTML = "작성일 : "+r.bdate
-            document.querySelector(".bview").innerHTML = "조회수 : "+r.bview
-            document.querySelector(".bfile").innerHTML = "첨부파일 : "+r.bfile
+            document.querySelector(".btitle").innerHTML = r.btitle
+            document.querySelector(".bcontent").innerHTML = r.bcontent
+            document.querySelector(".bcno").innerHTML = r.bcno
+            document.querySelector(".mid").innerHTML = r.mid;
+            document.querySelector(".bdate").innerHTML = r.bdate
+            document.querySelector(".bview").innerHTML = r.bview
+            if(r.bfile){
+                document.querySelector('.bfile').innerHTML = `<a href="/board/file/download?bfile=${ r.bfile }"> ${ r.bfile } </a>`;
+            }
+            //삭제 수정버튼 활성화 ( 해당 보고있는 크라이언트가 작성자의아이디와 동일하면
+            $.ajax({
+                url:"/member/login/check",
+                method: "get",
+                success: (loginid) =>{
+                    console.log(loginid)
+                    console.log(r.mid)
+                    if(loginid == r.mid){
+                    document.querySelector(".btnBox").innerHTML = `
+                    <button type="button" class="boardBtn" onclick="location.href='/board'">목록보기</button>
+                    <button type="button" class="boardBtn" onclick="onDelete(${r.bno})">삭제 </button>
+                    <button type="button" class="boardBtn" onclick="location.href='/board/update?bno=${r.bno}'"> 수정 </button>`
+                    }
+                }
+            })
+        }
+    })
+}
 
+function onDelete(bno){
+    $.ajax({
+        url : "/board/delete.do",method:"delete", data: {bno : bno},
+        success: (r) => {
+            if(r){
+                alert("삭제완료");
+                location.href="/board/"
+            }
+            else{
+                alert("삭제실패");
+            }
         }
     })
 }

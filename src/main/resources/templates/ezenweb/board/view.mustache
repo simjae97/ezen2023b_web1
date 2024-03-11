@@ -1,14 +1,27 @@
 {{>ezenweb/header}}
     <div class="container">
-        <h3>게시물 상세 페이지</h3>
-        <a href="/board">목록보기</a>
-        <div class="bcno"></div>
-        <div class="btitle"></div>
-        <div class="bcontent"> </div>
-        <div class="mno"> </div>
-        <div class="bdate"> </div>
-        <div class="bview"> </div>
-        <div class="bfile"> </div>
+        <div class="boardViewBox">
+            <div> <span class="btitle">제목이 들어가는 자리</span></div>
+            <div>
+                <div> <span class="viewTitle"> 카테고리</span> <span class="bcno"></span></div>
+                <div> <span class="viewTitle"> 작성자</span> <span class="mid"></span></div>
+                <div> <span class="viewTitle"> 작성일</span> <span class="bdate"></span></div>
+                <div> <span class="viewTitle"> 조회수</span> <span class="bview"></span></div>
+            </div>
+            <div class="bcontent">
+
+            </div>
+            <div>
+                <div> <span> 첨부파일</span> <span class="bfile"></span></div>
+            </div>
+        </div>
+        <div class="btnBox">
+        <button class="boardBtn" type="button" onclick="location.href='/board'">목록보기</button>
+        </div>
+        <div class="replyBox">
+
+        </div>
     </div>
+
 <script src="/js/board/view.js"></script>
 {{>ezenweb/footer}}
