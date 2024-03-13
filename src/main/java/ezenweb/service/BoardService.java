@@ -132,7 +132,7 @@ public class BoardService{
         return boardDAO.getReplyWrite(map);
     }
     //8.댓글 출력
-    public List<Map<String,String >> getReplyDo(int bno){
+    public List<Map<String,Object >> getReplyDo(int bno){
         return boardDAO.getReplyDo(bno);
     }
 }

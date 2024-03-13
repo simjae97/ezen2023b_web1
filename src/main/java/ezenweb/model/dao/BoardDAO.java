@@ -3,6 +3,7 @@ package ezenweb.model.dao;
 import ezenweb.model.dto.BoardDTO;
 import org.springframework.stereotype.Component;
 
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
@@ -243,7 +244,7 @@ public int getBoardSize( int bcno ,String key , String keyWord){
         try {
             String sql = "delete from board where bno= "+bno;
             ps = conn.prepareStatement(sql);
-            int count = ps.executeUpdate(); if(count ==1) return true;
+            int count = ps.executeUpdate(); if(count == 1) return true;
         }
         catch (Exception e){
             System.out.println("e = " + e);
@@ -289,18 +290,37 @@ public int getBoardSize( int bcno ,String key , String keyWord){
         return false;
     }
     //8.댓글 출력
-    public List<Map<String,String >> getReplyDo(int bno){
-        List <Map<String ,String >> result = new LinkedList<>();
+    public List<Map<String,Object >> getReplyDo(int bno){
+        List <Map<String ,Object >> result = new LinkedList<>();
         try {
             String sql = "select * from breply where brindex = 0 and bno="+bno;
             ps = conn.prepareStatement(sql);
             rs= ps.executeQuery();
             while (rs.next()){
-                Map<String ,String > map = new HashMap<>();
+                // 상위댓글 하나씩 객체화 하는곳
+                Map<String ,Object > map = new HashMap<>();
                 map.put("brno",rs.getString("brno"));
-                map.put("brcontent",rs.getString("bcontent"));
+                map.put("brcontent",rs.getString("brcontent"));
                 map.put("brdate",rs.getString("brdate"));
                 map.put("mno",rs.getString("mno"));
+                // -------해당 상위 댓글의 하위 댓글도 호출하기 ---------------//
+                String sql2 = "select * from breply where brindex = ?  and bno = "+bno;
+                ps = conn.prepareStatement(sql2);
+                ps.setInt(1,Integer.parseInt(rs.getString("brno" ) ) );
+                    //(int) vs Integer.parsInt()
+                // rs 사용하면 안되는 이유 : 이미 위의 while문에서 사용중 이므로
+                ResultSet rs2 = ps.executeQuery();
+                List<Map<String ,Object>> subList = new ArrayList<>();
+                while (rs2.next()) {
+                    Map<String, Object> subMap = new HashMap<>(); // 댓글 답변
+                    subMap.put("brno", rs2.getString("brno"));
+                    subMap.put("brcontent", rs2.getString("brcontent"));
+                    subMap.put("brdate", rs2.getString("brdate"));
+                    subMap.put("mno", rs2.getString("mno"));
+                    subList.add(subMap);
+                }
+                map.put("supReply",subList);
+                //종료
                 result.add(map);
             }
         }

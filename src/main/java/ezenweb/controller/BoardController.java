@@ -134,7 +134,7 @@ public class BoardController {
     //8.댓글 출력 (brno, brcontent, brdate , brindex , mno)
     @GetMapping("/reply/do")
     @ResponseBody
-    public List<Map<String,String >> getReplyDo(int bno){
+    public List<Map<String,Object >> getReplyDo(int bno){
         System.out.println("BoardController.getReplyDo");
         System.out.println("bno = " + bno);
         return boardService.getReplyDo(bno);
